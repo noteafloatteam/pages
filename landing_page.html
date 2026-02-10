@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NoteAfloat — Capture Ideas Faster</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .primary-bg {
+        background-color:#6200EE;
+    }
+     .primary-color {
+        color:#6200EE;
+    }
+    .nav-item:hover {
+        color:#6200EE;
+    }
+    .hover-mask:hover {
+        background-color: #6200dd;
+     opacity:1.2;
+    }
+    /* Optional: custom animations */
+    .fade-in {
+      animation: fadeIn 1s ease-in-out forwards;
+      opacity: 0;
+    }
+    
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-800">
+
+  <!-- Hero Section -->
+  <header class="bg-white">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- <a href="#" class="text-2xl font-bold primary-color">NoteAfloat</a> -->
+      <a href="#" class="text-2xl font-bold primary-color"><img src="file:///C:/Users/User/AndroidStudioProjects/NoteAfloat/app/src/main/ic_launcher-playstore.png" alt="NoteAfloat logo" width="60" height="auto"></a>
+      <div class="space-x-6 text-gray-600">
+        <a href="#features" class="nav-item">Features</a>
+        <a href="#screenshots" class="nav-item">Screenshots</a>
+        <a href="#testimonials" class="nav-item">Reviews</a>
+      </div>
+      <a href="#download" class="px-4 py-2 primary-bg text-white rounded-lg hover-mask transition">Download</a>
+    </nav>
+    <div class="container mx-auto px-6 text-center py-20">
+      <h1 class="text-4xl font-extrabold mb-4 fade-in">A Smarter Way to Take Notes</h1>
+      <p class="text-xl text-gray-600 mb-8 fade-in">Capture, organize, and recall your ideas effortlessly with NoteAfloat.</p>
+      <a href="#download" class="px-8 py-4 primary-bg text-white rounded-xl text-lg hover-mask transition">Get the App</a>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section id="features" class="py-20 bg-gray-50 fade-in">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">Features You’ll Love</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Quick Capture</h3>
+          <p class="text-gray-600">Add and view notes instantly with assistive overlay.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Organize with Tags</h3>
+          <p class="text-gray-600">Keep everything neat and searchable.</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold mb-2">Sync Across Devices</h3>
+          <p class="text-gray-600">Access your notes anywhere, anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section id="screenshots" class="py-20 fade-in">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">App Screenshots</h2>
+      <div class="flex overflow-x-auto space-x-6 pb-4">
+        <img src="#" alt="Screenshot 1" class="w-64 rounded-lg shadow-md">
+         <img src="#" alt="Screenshot 3" class="w-64 rounded-lg shadow-md">
+        
+         <img src="#" alt="Screenshot 3" class="w-64 rounded-lg shadow-md">
+        <img src="#" class="w-64 rounded-lg shadow-md">
+         <img src="#" alt="Screenshot 3" class="w-64 rounded-lg shadow-md">
+          <img src="#" alt="Screenshot 3" class="w-64 rounded-lg shadow-md">
+       
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Download / CTA -->
+  <section id="download" class="py-20 fade-in">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4">Download NoteAfloat</h2>
+      <p class="mb-8 text-gray-600">Available on Google Play.</p>
+      <a href="#" class="px-8 py-4 primary-bg text-white rounded-xl text-lg hover-mask transition">Download from Play Store</a>
+    </div>
+  </section>
+  <!-- Legal documents-->
+   
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-8 text-center text-sm">
+    <p>© 2026 NoteAfloat. All rights reserved.</p>
+    <p class="py-3"><a href="file:///C:/Users/User/legal_page.html" class="hover:text-white">Legal</a> • <a href="https://noteafloatteam.github.io/legal/privacy-policy" class="hover:text-white">Privacy Policy</a> • <a href="https://noteafloatteam.github.io/legal/terms-of-service" class="hover:text-white">Terms of Service</a></p>
+  </footer>
+
+  <script>
+    /* Simple fade-in trigger */
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".fade-in").forEach((el, idx) => {
+        setTimeout(() => el.classList.add("opacity-100"), idx * 150);
+      });
+    });
+  </script>
+
+</body>
+</html>
