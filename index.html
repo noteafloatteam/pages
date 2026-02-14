@@ -121,7 +121,7 @@
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-gray-400 py-8 text-center text-sm">
-    <p>© 2026 NoteAfloat. All rights reserved.</p>
+    <p>© <span id="#current_year"></span> NoteAfloat. All rights reserved.</p>
     <p class="py-3"><a href="legal-page.html" class="hover:text-white">Legal</a> • <a href="privacy-policy.html" class="hover:text-white">Privacy Policy</a> • <a href="terms-of-service.html" class="hover:text-white">Terms of Service</a></p>
   </footer>
 
@@ -131,11 +131,16 @@
       document.querySelectorAll(".fade-in").forEach((el, idx) => {
         setTimeout(() => el.classList.add("opacity-100"), idx * 150);
       });
-    });
-  </script>
+       const element = document.querySelector("#current_year");
+        if(element) {
+            element.innerHTML = new Date().getFullYear();
+            }
+        });
+    </script>
 
 </body>
 </html>
+
 
 
 
