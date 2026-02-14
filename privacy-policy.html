@@ -262,9 +262,18 @@
 
 <footer>
     <p>
-        © 2025 NoteAfloat. All rights reserved.
+        © <span id="current_year"></span> NoteAfloat. All rights reserved.
     </p>
 </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded",() => {
+            const element = document.querySelector("#current_year");
+            if(element) {
+                element.innerHTML = new Date().getFullYear();
+            }
+        }
+        )
+    </script>
 
 </body>
 </html>
