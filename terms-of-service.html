@@ -232,8 +232,17 @@
 <p><strong>Email:</strong> noteafloatteam@gmail.com</p>
 
 <footer>
-    <p>© 2026 NoteAfloat. All rights reserved.</p>
+    <p>© <span id="#current_year"></span> NoteAfloat. All rights reserved.</p>
 </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded",() => {
+            const element = document.querySelector("#current_year");
+            if(element) {
+                element.innerHTML = new Date().getFullYear();
+            }
+        }
+        )
+    </script>
 
 </body>
 </html>
