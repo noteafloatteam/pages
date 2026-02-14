@@ -100,11 +100,21 @@
     </p>
 
     <div class="footer">
-        © NoteAfloat. All rights reserved.
+        © <span id="#current_year"></span> NoteAfloat. All rights reserved.
     </div>
 
 </div>
+    <script>
+        document.addEventListener("DOMContentLoaded",() => {
+            const element = document.querySelector("#current_year");
+            if(element) {
+                element.innerHTML = new Date().getFullYear();
+            }
+        }
+        )
+    </script>
 </body>
 </html>
+
 
 
