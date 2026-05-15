@@ -36,7 +36,7 @@
 
 <h1>Privacy Policy</h1>
 
-<p><strong>Effective date:</strong> Februay 25, 2026</p>
+<p><strong>Effective date:</strong> May 15, 2026</p>
 
 <p>
     This Privacy Policy describes how <strong>NoteAfloat</strong> (“we”, “us”, or “the App”)
@@ -65,8 +65,10 @@
 <h3>2.1 Information We Do Not Collect</h3>
 <p>
     We do not collect, store, or transmit personal information such as names, email
-    addresses, phone numbers, contact lists, device identifiers, IP addresses,
-    location data, or account credentials.
+    addresses, phone numbers, contact lists, location data, or account credentials. However, certain third-party services integrated into the App, such as Google
+AdMob, Google Play Billing and Firebase Authentication may automatically collect
+limited technical information including IP addresses, device identifiers,
+diagnostic data, and purchase-related information as described in this Privacy Policy.
 </p>
 
 <h3>2.2 User-Created Content (Notes)</h3>
@@ -88,13 +90,14 @@
 
     <li><strong>Storage</strong> — used only to persist media (photos, videos, audio) that you create with the App. Storage access is requested according to Android’s scoped-storage model and applicable runtime permission rules.</li>
 
-    <li><strong>Draw over other apps </strong> — used only to display one or two floating assistive buttons that provide quick access to note creation and viewing. The overlay is optional and may be disabled by the user or via system settings.</li>
+    <li><strong>Draw over other apps </strong> — used only to display one or two floating assistive buttons that provide quick access to note creation and viewing. The overlay is optional and may be disabled by the user via system settings.</li>
 
     <li><strong>Foreground service</strong> — used to support ongoing, user-initiated activities such as the overlay. When a foreground service is active a persistent system notification is displayed; you may stop the service at any time.</li>
 
     <li><strong>Screen capture / Media projection / Background audio recording</strong> — used only to capture screenshots or record the device screen and/or background audio when explicitly requested by the user. Any such captures are performed with user consent and are stored locally. </li>
     
     <li><strong>Package usage stats</strong> — used only to filter notes by the package names of installed applications after you grant Usage access. You may withdraw this permission at anytime via your device's system settings. </li>
+<li><strong>Advertising ID (AD_ID)</strong> — used by advertising and analytics services, such as Google AdMob, to support ad delivery, measure ad performance, prevent fraud, and improve advertising relevance. The advertising ID is a user-resettable identifier managed by Google Play services and may be disabled or reset through your device’s system settings.</li>
 </ul>
 <p>If we add or change permissions, we will update this Privacy Policy and the App’s Data Safety disclosure in the Play Console.</p>
 
@@ -140,18 +143,22 @@
 <hr>
 
 <h2>4. Third-Party Services</h2>
-
 <p>
-   We use <strong>Firebase Crashlytics</strong>, a third-party crash-reporting service provided by Google, to collect crash reports and diagnostic 
+We currently use the following third-party services:
+</p>
+<ul>
+    <li><strong>Google Play Billing</strong> — to process subscriptions and other digital purchases in the App. Google Play Billing is used solely for payment processing. Use of paid features is also subject to Google’s terms and privacy policies.</li>
+     <li><strong>Google Mobile Ads (AdMob)</strong> — to display advertisements. The Google Mobile Ads SDK may automatically collect and share IP address, user product interactions, diagnostic information, and device/account identifiers for advertising, analytics, and fraud prevention.</li>
+   <li><strong>Firebase Authentication</strong> — to provide authentication functionality, including anonymous sign-in. Firebase can create temporary anonymous accounts so users can use authentication-protected features without creating a personal account first.</li>
+    <li> <strong>Firebase Crashlytics</strong>, a third-party crash-reporting service provided by Google, to collect crash reports and diagnostic 
     data that help us identify and fix stability issues. Crashlytics may collect technical data such as stack traces, app version, OS version, device model, and an installation identifier. 
     Crash reports and related diagnostic metadata are transmitted to and processed by Google under its privacy policies. 
-    If you would like to opt out of crash reporting where permitted by law, you may disable Crashlytics collection in the App’s Settings. Disabling crash reporting prevents Crashlytics from automatically sending crash reports from your device; see the App Settings to change this preference.
-</p>
-
+    If you would like to opt out of crash reporting where permitted by law, you may disable Crashlytics collection in the App’s Settings. Disabling crash reporting prevents Crashlytics from automatically sending crash reports from your device; see the App Settings to change this preference.</li>
 <p>
-    Google Play Billing is used solely for payment processing. Use of paid features is
-    also subject to Google’s terms and privacy policies.
+We also use Firebase  Firestore and Cloud Functions, to securely store and process limited app-related data such as trial eligibility, subscription status, feature access, and related technical information necessary for app functionality and fraud prevention.
 </p>
+</ul>
+
 
 <p>
    If we add or change any third-party services or SDKs in the future that affect how user data is collected or shared, 
